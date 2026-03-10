@@ -1,0 +1,30 @@
+{
+  "name": "flowdo",
+  "version": "1.0.0",
+  "description": "A minimal task manager",
+  "main": "main.js",
+  "scripts": {
+    "start": "unset ELECTRON_RUN_AS_NODE && electron .",
+    "build": "unset ELECTRON_RUN_AS_NODE && electron-builder --mac",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "build": {
+    "appId": "com.flowdo.app",
+    "productName": "FlowDo",
+    "files": [
+      "main.js",
+      "index.html",
+      "package.json"
+    ],
+    "mac": {
+      "target": "dmg"
+    }
+  },
+  "devDependencies": {
+    "electron": "^33.4.11",
+    "electron-builder": "^26.8.1"
+  }
+}
